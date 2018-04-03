@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Tocknicsu">
+        <meta name="copyright" content="Tocknicsu">
+        <meta name="description" content="They are billions">
+        <meta name="keywords" content="They are billions">
+
+        <style type="text/css">
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            #app {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            #loading {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                background-color: #bb564f;
+            }
+
+            .dot {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                color: #f5d4a1;
+                background-color: currentColor;
+                font-size: 15px;
+                box-shadow: -2em -2em, 2em -2em, -2em 2em, 2em 2em;
+                -webkit-animation: loading .8s ease-in-out infinite;
+                animation: loading .8s ease-in-out infinite;
+                -webkit-transform: rotate(.125turn);
+                transform: rotate(.125turn);
+            }
+
+            @-webkit-keyframes loading {
+                to {
+                    box-shadow: -2em 2em, -2em -2em, 2em 2em, 2em -2em;
+                }
+            }
+
+            @keyframes loading {
+                to {
+                    box-shadow: -2em 2em, -2em -2em, 2em 2em, 2em -2em;
+                }
+            }
+
+        </style>
+        <title>They are billions</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="loading"></div>
+            <div class="dot"></div>
+        </div>
+    </body>
+
+</html>
